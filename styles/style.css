@@ -1,3 +1,7 @@
+body {
+  background: black;
+}
+
 .espartano-image {
   background: url('imgs/espartano.png') no-repeat;
 }
@@ -32,10 +36,115 @@
   width: 132px;    
 }
 
-.espartano > span:hover {
-  background-position: 300px 0px;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 1.5s;
-    transition-property: all;
-    transition-duration: 1.5s;
+svg {
+  position: absolute;
+  z-index: 11;
+  -webkit-transform: translate(625%, 219%);
+  transform: translate(625%, 219%);
+}
+.group {
+    -webkit-transform: translate(42.5px,42.5px);
+    -moz-transform: translate(42.5px,42.5px);
+    transform: translate(42.5px, 42.5px);
+}
+path {
+    -webkit-transform: translate(-42.50px,-42.50px);
+    -moz-transform: translate(-42.50px,-42.50px);
+    transform: translate(-42.50px,-42.50px);
+}
+.large {
+  -webkit-animation: large 2.5s infinite;
+  -moz-animation: large 2.5s infinite;
+}
+.large-2 {
+  -webkit-animation: large-2 2.5s infinite;
+  -moz-animation: large-2 2.5s infinite;
+}
+.small {
+  -webkit-animation: small 2.5s infinite;
+  -moz-animation: small 2.5s infinite;
+}
+@-webkit-keyframes large {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.5);
+  }
+}
+@-moz-keyframes large {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg) scale(1.5);
+  }
+}
+@-webkit-keyframes large-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) scale(0);
+    transform: rotate(45deg) scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(405deg) scale(1.1);
+    transform: rotate(405deg) scale(1.1);
+  }
+}
+@-moz-keyframes large-2 {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(405deg) scale(1.1);
+  }
+}
+@-webkit-keyframes small {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(-360deg) scale(1);
+    transform: rotate(-360deg) scale(1.5);
+  }
+}
+@-moz-keyframes small {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-360deg) scale(1.5);
+  }
 }
