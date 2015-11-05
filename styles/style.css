@@ -1,0 +1,41 @@
+.espartano-image {
+  background: url('imgs/espartano.png') no-repeat;
+}
+
+.circulo-image {
+  background: url('imgs/circulo.png') no-repeat;
+}
+
+.espartano {
+  z-index: 10;
+  position: absolute;
+  width: 709px;
+  height: 801px;
+  transform: translate3d(300px, -714px, 0px);
+}
+
+.circulo {
+  z-index: 5;
+  position: absolute;
+  width: 709px;
+  height: 801px;
+  transform: translate3d(300px, -16px, 0px);
+}
+
+.espartano > span {
+  position: relative;
+  display: block;
+  background: url('imgs/brillog.png') no-repeat; 
+  background-position: -300px 0;
+  margin-top:-137px;
+  height: 133px;
+  width: 132px;    
+}
+
+.espartano > span:hover {
+  background-position: 300px 0px;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1.5s;
+    transition-property: all;
+    transition-duration: 1.5s;
+}
