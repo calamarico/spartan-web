@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Sparta;
+  src: url('fonts/sparta.ttf');
+  font-weight: bold;
+}
+
 body {
   background: black;
 }
@@ -148,3 +154,5 @@ path {
     transform: rotate(-360deg) scale(1.5);
   }
 }
+
+
