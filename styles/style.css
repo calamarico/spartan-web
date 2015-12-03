@@ -30,6 +30,10 @@ body {
   width: 709px;
   height: 801px;
   transform: translate3d(300px, -16px, 0px);
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 .espartano > span {
@@ -45,6 +49,7 @@ body {
 svg {
   position: absolute;
   z-index: 11;
+  display: none;
   -webkit-transform: translate(625%, 219%);
   transform: translate(625%, 219%);
 }
