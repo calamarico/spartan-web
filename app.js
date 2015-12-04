@@ -22,9 +22,21 @@ function downSpartan(callback) {
       .end(callback);
 }
 
+function loadImages() {
+  $('#i1').attr('src', 'styles/imgs/sparta1.png');
+  $('#i2').attr('src', 'styles/imgs/sparta2.png');
+  $('#i3').attr('src', 'styles/imgs/sparta3.png');
+  $('#i4').attr('src', 'styles/imgs/sparta4.png');
+  $('#i5').attr('src', 'styles/imgs/sparta5.png');
+  $('#i6').attr('src', 'styles/imgs/sparta6.png');
+  $('.image-gym').css('display', 'inherit');
+}
+
 function showEye() {
   $('#eye').css('display', 'inherit');
+  loadImages();
 }
+
 
 $(document).ready(function() {
   $('#circulo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd ' +
@@ -32,4 +44,5 @@ $(document).ready(function() {
       downSpartan(detectIE() ? undefined : showEye);
     });
   $('#circulo').addClass('animated fadeIn');
+  $("a[rel^='prettyPhoto']").prettyPhoto();
 });

@@ -46,6 +46,59 @@ body {
   width: 132px;    
 }
 
+.image-gym {
+  display: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.image-gym:hover {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.i1 {
+  position: absolute;
+  top: 195px;
+  left: 198px;
+}
+
+.i2 {
+  position: absolute;
+  top: 351px;
+  left: 198px;
+}
+
+.i3 {
+  position: absolute;
+  top: 507px;
+  left: 198px;
+}
+
+.i4 {
+  position: absolute;
+  top: 195px;
+  left: 1010px;
+}
+
+.i5 {
+  position: absolute;
+  top: 351px;
+  left: 1010px;
+}
+
+.i6 {
+  position: absolute;
+  top: 507px;
+  left: 1010px;
+}
+
 svg {
   position: absolute;
   z-index: 11;
