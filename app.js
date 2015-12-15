@@ -41,8 +41,9 @@ function showEye() {
 $(document).ready(function() {
   $('#circulo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd ' +
     ' oanimationend animationend', function(param) {
-      downSpartan(detectIE() ? undefined : showEye);
+      //downSpartan(detectIE() ? undefined : showEye);
+      downSpartan(loadImages);
     });
   $('#circulo').addClass('animated fadeIn');
-  $("a[rel^='prettyPhoto']").prettyPhoto();
+  $('a[rel^="prettyPhoto"]').prettyPhoto();
 });
