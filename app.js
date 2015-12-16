@@ -14,9 +14,18 @@ function detectIE() {
   }
 }
 
+function getCircleLeft() {
+  return $('#circulo').offset().left;
+}
+
+function setEspartanoToCenter() {
+  $('#espartano').css({left: getCircleLeft()});
+}
+
 function downSpartan(callback) {
+  setEspartanoToCenter();
   move(ESPARTANO)
-    .translate(300, -18)
+    .translateY(-18)
     .ease('in')
       .duration('0.4s')
       .end(callback);
@@ -46,4 +55,7 @@ $(document).ready(function() {
     });
   $('#circulo').addClass('animated fadeIn');
   $('a[rel^="prettyPhoto"]').prettyPhoto();
+  $(window).resize(function() {
+    setEspartanoToCenter();
+  });
 });
