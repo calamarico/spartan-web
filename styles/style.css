@@ -51,6 +51,7 @@ body {
 
 .image-gym {
   display: none;
+  float: left;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -68,41 +69,15 @@ body {
 
 .images-container {
   position: relative;
-}
-.i1 {
-  position: absolute;
-  top: 195px;
-  left: 198px;
-}
-
-.i2 {
-  position: absolute;
-  top: 351px;
-  left: 198px;
+  display: inline;
+  width: 100px;
+  float: left;
+  margin-top: 90px;
 }
 
-.i3 {
-  position: absolute;
-  top: 507px;
-  left: 198px;
-}
-
-.i4 {
-  position: absolute;
-  top: 195px;
-  left: 1010px;
-}
-
-.i5 {
-  position: absolute;
-  top: 351px;
-  left: 1010px;
-}
-
-.i6 {
-  position: absolute;
-  top: 507px;
-  left: 1010px;
+.right-images {
+  float: right;
+  margin-top: -722px;
 }
 
 svg {
