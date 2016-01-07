@@ -52,6 +52,7 @@ body {
 .image-gym {
   display: none;
   float: left;
+  margin-top: 112px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -67,6 +68,14 @@ body {
   transform: rotate(-10deg);
 }
 
+.spartan-text {
+  top: 45%;
+  position: absolute;
+  font-family: Sparta;
+  color: black;
+  font-size: 61px;
+}
+
 .images-container {
   position: relative;
   display: inline;
@@ -78,6 +87,45 @@ body {
 .right-images {
   float: right;
   margin-top: -722px;
+}
+
+.video-section {
+  position: relative;
+  height: 400px;
+  background-color: #A7383D;
+}
+
+.iframe-container {
+  text-align: center;
+  padding: 40px;
+}
+
+footer {
+  position: relative;
+  padding-top: 14px;
+  height: 180px;
+  background-color: #100A0A;
+}
+
+.footer-title {
+  font-family: Sparta;
+  font-size: 27px;
+  color: white;
+}
+
+.footer-subtitle {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.footer-map {
+  position: absolute;
+  right: 20%;
+  top: 6px;
+}
+
+i {
+  display: inline-block;
 }
 
 svg {
